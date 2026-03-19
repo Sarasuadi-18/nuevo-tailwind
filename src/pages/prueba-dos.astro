@@ -1,0 +1,74 @@
+---
+import "../styles/global.css"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridt</title>
+</head>
+<body class="container mx-auto mt-5 text-center">
+    <h1><span class="box-decoration-slice bg-linear-to-r from-indigo-600 to-pink-500 px-2 text-white ...">
+    Hello<br />World
+    </span> </h1>
+    
+
+    <div class=" grid grid-cols-3 gap-4 my-2">
+        <div class="bg-red-400">A</div>
+        <div class="bg-red-400">B</div>
+        <div class="bg-red-400">C</div>
+        <div class="bg-red-400">E</div>
+    </div>
+
+
+    <div class=" grid grid-cols-1 sm:grid-cols-3 gap-4 my-2">
+        <div class="bg-blue-400">A</div>
+        <div class="bg-blue-400">B</div>
+        <div class="bg-blue-400">C</div>
+        <div class="bg-blue-400">E</div>
+    </div>
+
+
+    <div class=" grid grid-cols-4 gap-4 my-2">
+        <div class="bg-purple-400 col-span-2">B</div>
+        <div class="bg-purple-400">a</div>
+        <div class="bg-purple-400">C</div>
+        <div class="bg-purple-400 col-span-4">E</div>
+    </div>
+
+    <div class=" grid grid-cols-12 gap-4 my-2">
+        <div class="bg-green-400 col-span-4">B</div>
+        <div class="bg-green-400 col-span-4">a</div>
+        <div class="bg-green-400 col-span-4">C</div>
+      
+    </div>
+
+     <div class=" grid grid-cols-4 gap-4 my-2">
+        <div class="bg-red-400 col-start-4 ">B</div>
+        <div class="bg-red-400 ">a</div>
+        <div class="bg-red-400">C</div>
+        <div class="bg-red-400">d</div>
+      
+    </div>
+
+
+    <div class=" grid grid-rows-4 gap-4 my-2">
+        <div class="bg-gray-950 row-span-2 text-white ">B</div>
+        <div class="bg-gray-950 text-white">a</div>
+        <div class="bg-gray-950 text-white">C</div>
+        <div class="bg-gray-950 text-white">d</div>
+    </div>
+
+
+    <div class=" grid grid-cols-4  grid-rows-4 gap-4" >
+        <div class="bg-pink-950  text-white ">B</div>
+        <div class="bg-pink-950 text-white">a</div>
+        <div class="bg-pink-950 text-white col-span-2 row-span-2">B</div>
+        <div class="bg-pink-950 text-white">d</div>
+        <div class="bg-pink-950 text-white">f</div>
+    </div>
+
+</body>
+</html>
