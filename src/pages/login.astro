@@ -1,11 +1,6 @@
 ---
 import "../styles/global.css";
-
-import iconoCorreo from "../assets/correo.png";
-import iconoBloqueado from "../assets/bloqueado.png";
-import hola from "../assets/hi.jpg";
-import personaje from "../assets/img.png";
-
+import Navegacion from "../components/Navegacion.astro";
 ---
 
 <!DOCTYPE html>
@@ -15,57 +10,60 @@ import personaje from "../assets/img.png";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
-</head>
+</head> 
+
+
 
 <body class="bg-linear-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% flex items-center justify-center h-screen">
-
-
-
-    <div class="max-w-[960px] bg-slate-800/50 backdrop-blur-md grid grid-cols-1 md:grid-cols-2 items-center gap-10 p-10 rounded-3xl shadow-2xl border border-white/10" >
-       <div class="relative w-full flex items-end overflow-hidden rounded-xl">
-            <img 
-            src={personaje.src} 
-            alt="personaje" 
-            class="relative z-10 w-full h-auto object-contain"
-            />
-        </div>
-
-        <div class="max-w-80 grid gap-5">
-            <h1 class="text-5xl font-bold text-white">Login</h1>
-            <p class="text-slate-100">Llena todos los campos para tener acceso</p>
-            <form action="" class="space-y-6 text-white">
-
-                <div class="relative flex items-center">
-                    <div class="absolute left-3  rounded-full  flex items-center justify-center">
-                        <img src={iconoCorreo.src} alt="Correo" class="w-8 h-8 object-contain">
-                    </div>
-                    <input 
-                        type="email" 
-                        placeholder="email" 
-                        class="w-full bg-slate-300 py-3 pl-14 pr-4 rounded-full text-black focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-300 transition-all shadow-inner"
-                    >
-                </div>
-
-                <div class="relative flex items-center">
-                    <div class="absolute left-3 rounded-full  flex items-center justify-center">
-                        <img src={iconoBloqueado.src} alt="Bloqueado" class="w-8 h-8 object-contain">
-                    </div>
-                    <input 
-                        type="password" 
-                        placeholder="contraseña" 
-                        class="w-full bg-slate-300 py-3 pl-14 pr-4 rounded-full text-black focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-300 transition-all shadow-inner"
-                    >
-                </div>
-                
-               <button class="bg-linear-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 w-full font-bold text-white rounded-full py-3 shadow-lg transform hover:scale-[1.02] transition-all">
-                    Iniciar Sesión
-                </button>
-            </form>
-            <div class="text-white border-t border-white pt-4 space-y-4 text-sm">
-                <p>¿No tienes una cuenta? <a href="" class="text-sky-300 font-semibold hover:underline" >Registrarme</a></p>
-                <p>¿Olvidaste tu contraseña? <a href=""  class="text-sky-300 font-semibold hover:underline">Recuperar</a></p>
+  
+   
+    <div>
+        <div class="max-w-[960px] bg-slate-800/50 backdrop-blur-md grid grid-cols-1 md:grid-cols-2 items-center gap-10 p-10 rounded-3xl shadow-2xl border border-white/10" >
+        <div class="relative w-full flex items-end overflow-hidden rounded-xl">
+                <img 
+                src="/src/assets/img.png"
+                alt="personaje" 
+                class="relative z-10 w-full h-auto object-contain"
+                />
             </div>
 
+            <div class="max-w-80 grid gap-5">
+                <h1 class="text-5xl font-bold text-white">Login</h1>
+                <p class="text-slate-100">Llena todos los campos para tener acceso</p>
+                <form action="" class="space-y-6 text-white">
+
+                    <div class="relative flex items-center">
+                        <div class="absolute left-3  rounded-full  flex items-center justify-center">
+                            <img src="/src/assets/correo.png" alt="Correo" class="w-8 h-8 object-contain">
+                        </div>
+                        <input 
+                            type="email" 
+                            placeholder="email" 
+                            class="w-full bg-slate-300 py-3 pl-14 pr-4 rounded-full text-black focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-300 transition-all shadow-inner"
+                        >
+                    </div>
+
+                    <div class="relative flex items-center">
+                        <div class="absolute left-3 rounded-full  flex items-center justify-center">
+                            <img src="/src/assets/bloqueado.png" alt="Bloqueado" class="w-8 h-8 object-contain">
+                        </div>
+                        <input 
+                            type="password" 
+                            placeholder="contraseña" 
+                            class="w-full bg-slate-300 py-3 pl-14 pr-4 rounded-full text-black focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-300 transition-all shadow-inner"
+                        >
+                    </div>
+                    
+                <button class="bg-linear-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 w-full font-bold text-white rounded-full py-3 shadow-lg transform hover:scale-[1.02] transition-all">
+                        Iniciar Sesión
+                    </button>
+                </form>
+                <div class="text-white border-t border-white pt-4 space-y-4 text-sm">
+                    <p>¿No tienes una cuenta? <a href="" class="text-sky-300 font-semibold hover:underline" >Registrarme</a></p>
+                    <p>¿Olvidaste tu contraseña? <a href=""  class="text-sky-300 font-semibold hover:underline">Recuperar</a></p>
+                </div>
+
+            </div>
         </div>
     </div>
 </body>

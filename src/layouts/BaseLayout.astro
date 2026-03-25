@@ -1,20 +1,16 @@
 ---
-// src/layouts/BaseLayout.astro
-import Header from '../components/Header.astro';
-import '../styles/global.css';
-
-const { title, bodyClass = "bg-white text-slate-900" } = Astro.props; 
-// Por defecto el fondo será blanco, a menos que digas lo contrario
+// Puedes recibir el título de la página como una "prop"
+const {pageTitle}=Astro.props;
+import "../styles/global.css"; // Asegúrate de importar tu CSS de Tailwind aquí
 ---
+
 <html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{title}</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle}</title>
   </head>
-  <body class={bodyClass}> <Header />
-    <main>
-      <slot />
-    </main>
-  </body>
+  <body> 
+    <slot /> 
+    </body>
 </html>
